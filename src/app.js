@@ -32,7 +32,7 @@ const generateFlashcards = async () => {
 
 ${pdfText}`;
 
-    const response = await fetch("https://flashcardapp-e7ti.onrender.com", {
+    const response = await fetch("https://flashcardapp-e7ti.onrender.com/api/gemini", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
