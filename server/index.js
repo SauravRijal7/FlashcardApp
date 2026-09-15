@@ -7,7 +7,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 const app = express();
 
 app.use(cors()); //backend
-app.use(express.json());
+app.use(express.json({ limit: "100mb" }));
 app.get("/", (req, res) => {
   res.json({ status: "Backend is working" });
 });
