@@ -54,7 +54,7 @@ ${pdfText}`;
     setFlippedCards({});
   } catch (err) {
     console.error("Gemini error:", err);
-    alert("Failed to generate flashcards. Check console for details.");
+    alert("High Volume of Requests received. Please try again in 30 seconds :) ");
   } finally {
     setLoading(false);
   }
